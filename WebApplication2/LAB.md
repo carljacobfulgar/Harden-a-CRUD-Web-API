@@ -1,0 +1,2 @@
+﻿- Behavior 1 (Invalid Input): POST /api/products accepted payload { "name": "", "sku": "INVALID", "price": -50.00 } and returned 200/201, persisting corrupted data into memory.
+- Behavior 2 (Missing Resource): GET /api/products/9999 returned an unhandled NullReferenceException resulting in an ugly 500 Internal Server Error with exposed stack traces (or empty 200 OK without indicating missing resource).
